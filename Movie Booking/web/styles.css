@@ -1,0 +1,18 @@
+/* styles.css — minimal styles for the demo */
+:root{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;color:#111;background:#f6f8fa}
+*{box-sizing:border-box}
+.container{max-width:760px;margin:28px auto;padding:20px}
+.card{background:#fff;border:1px solid #e6e9ee;border-radius:8px;padding:16px;margin-bottom:16px}
+h1{margin:0 0 12px}
+.movies-list{display:grid;gap:10px}
+.movie-item{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-radius:6px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #f0f3f6}
+.movie-meta{display:flex;flex-direction:column}
+.movie-name{font-weight:600}
+.movie-price{color:#666;font-size:0.95rem}
+.movie-controls input{width:64px;padding:6px;border-radius:6px;border:1px solid #dfe6ee}
+.actions{display:flex;gap:10px;margin-bottom:8px}
+.btn{background:#fff;border:1px solid #cfd8e3;padding:8px 12px;border-radius:6px;cursor:pointer}
+.btn.primary{background:linear-gradient(180deg,#1766ff,#0e4fd6);color:#fff;border-color:#0d46b1}
+.btn:active{transform:translateY(1px)}
+.bill-output{white-space:pre-wrap;background:#0f1724;color:#e6f3ff;padding:12px;border-radius:6px;min-height:80px}
+.muted{color:#6b7280;font-size:0.9rem;margin-top:8px}

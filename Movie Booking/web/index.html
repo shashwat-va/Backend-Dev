@@ -1,0 +1,49 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Movie Ticket Booking — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Movie Ticket Booking — Demo</h1>
+
+    <section id="user-section" class="card">
+      <h2>Customer</h2>
+      <label>
+        Name
+        <input id="user-name" placeholder="e.g. Alice" />
+      </label>
+      <label>
+        Type
+        <select id="user-type">
+          <option value="standard">Standard (5%)</option>
+          <option value="vip">VIP (12%)</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="movies-section" class="card">
+      <h2>Movies</h2>
+      <div id="movies-list" class="movies-list"></div>
+    </section>
+
+    <div class="actions">
+      <button id="book-btn" class="btn primary">Book Tickets</button>
+      <button id="reset-btn" class="btn">Reset</button>
+    </div>
+
+    <section id="bill-section" class="card">
+      <h2>Bill</h2>
+      <pre id="bill-output" class="bill-output">(no booking yet)</pre>
+    </section>
+
+    <footer class="muted">Uses the same booking logic as <code>movieBooking.js</code>.</footer>
+  </main>
+
+  <script src="../movieBooking.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
