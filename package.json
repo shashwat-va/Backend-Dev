@@ -1,0 +1,26 @@
+{
+  "name": "transaction-processing-system",
+  "version": "1.0.0",
+  "description": "Node.js transaction processing system with environment isolation, health monitoring, and deployment automation.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "healthcheck": "node scripts/health-check.js",
+    "lint": "echo \"No lint rules configured\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.3",
+    "mongoose": "^7.3.5",
+    "prom-client": "^14.0.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

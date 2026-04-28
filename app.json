@@ -1,0 +1,32 @@
+{
+  "name": "transaction-processor",
+  "description": "Heroku app manifest for development and staging environments.",
+  "scripts": {
+    "postdeploy": "echo 'Deployment completed'"
+  },
+  "env": {
+    "NODE_ENV": {
+      "description": "Runtime environment",
+      "value": "development"
+    },
+    "PORT": {
+      "description": "Port for the application",
+      "value": "3000"
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB Atlas connection string for the target environment"
+    },
+    "API_BASE_URL": {
+      "description": "Base URL for any downstream APIs"
+    },
+    "LOG_LEVEL": {
+      "description": "Logging level for the environment"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  }
+}
