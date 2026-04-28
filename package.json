@@ -1,0 +1,17 @@
+{
+  "name": "assignment-2-nodejs",
+  "version": "1.0.0",
+  "description": "Node.js exercises: file operations, custom module, system logger, simple API, and event loop demo.",
+  "main": "exercise1.js",
+  "scripts": {
+    "wordcount": "node exercise1.js",
+    "system-logger": "node systemLogger.js",
+    "todo-api": "node todoApi.js",
+    "event-loop": "node eventLoopDemo.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  },
+  "author": "",
+  "license": "MIT"
+}
